@@ -1,0 +1,52 @@
+.has-small-font-size {
+	font-size: var(--font-size-sm);
+}
+
+.has-medium-font-size {
+	font-size: var(--font-size-md);
+}
+
+.has-large-font-size {
+	font-size: var(--font-size-2xl);
+}
+
+.has-larger-font-size {
+	font-size: var(--font-size-3xl);
+	line-height: var(--line-height-sm);
+}
+
+.font-sans {
+	font-family: var(--font-family-sans);
+}
+
+.font-serif {
+	font-family: var(--font-family-serif);
+}
+
+.font-bold {
+	font-weight: 700;
+}
+
+.font-extrabold {
+	font-weight: 800;
+}
+
+.no-underline {
+	text-decoration: none;
+}
+
+.focus-inherit {
+	&:hover,
+	&:focus,
+	&:active {
+		color: inherit;
+	}
+}
+
+.tracking-md {
+	letter-spacing: var(--letter-spacing-md);
+}
+
+.uppercase {
+	text-transform: uppercase;
+}

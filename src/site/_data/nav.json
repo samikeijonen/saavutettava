@@ -1,0 +1,20 @@
+{
+	"items": [
+		{
+			"text": "Etusivu",
+			"url": "/"
+		},
+		{
+			"text": "Artikkelit",
+			"url": "/artikkelit/"
+		},
+		{
+			"text": "Info",
+			"url": "/info/"
+		},
+		{
+			"text": "Tietosuoja",
+			"url": "/tietosuoja/"
+		}
+	]
+}
