@@ -27,6 +27,12 @@ permalink: "{{ blogpost.date | dateForSlug }}/{{ blogpost.slug }}/index.html"
 	{{ blogpost.content.rendered | safe }}
 {% endblock %}
 
+{% block contentFooter %}
+	<div class="entry__footer">
+		{% include "components/tags.njk" %}
+	</div>
+{% endblock %}
+
 {% block comments %}
 	{% include "components/comments.njk" %}
 {% endblock %}

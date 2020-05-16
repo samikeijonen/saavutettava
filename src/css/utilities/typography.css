@@ -1,16 +1,16 @@
-.has-small-font-size {
+.has-sm-font-size {
 	font-size: var(--font-size-sm);
 }
 
-.has-medium-font-size {
+.has-md-font-size {
 	font-size: var(--font-size-md);
 }
 
-.has-large-font-size {
+.has-2xl-font-size {
 	font-size: var(--font-size-2xl);
 }
 
-.has-larger-font-size {
+.has-3xl-font-size {
 	font-size: var(--font-size-3xl);
 	line-height: var(--line-height-sm);
 }

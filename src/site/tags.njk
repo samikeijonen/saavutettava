@@ -1,10 +1,13 @@
 ---
-title: Artikkelit
 layout: layouts/page.njk
 pagination:
   data: posts
   size: 10
+  alias: tag
 ---
+
+{% set title = Avainsana %}
+{% set taglist = collections[ tag ] %}
 
 {% block content %}
 	<ul>
