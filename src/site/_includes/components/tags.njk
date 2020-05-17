@@ -1,12 +1,5 @@
+{% set termSlug = "tag" %}
 {% set allTags = tags %}
-{% set postTags = allTags | thisPostTags(blogpost.tags) %}
+{% set terms = allTags | thisPostTags(blogpost.tags) %}
 
-{% if postTags | length %}
-	<ul class="entry__terms entry__terms--tags reset-list flex flex-wrap">
-		{%- for tag in postTags -%}
-			<li class="entry__terms-item">
-				<a class="entry__terms-anchor no-underline font-sans font-bold has-sm-font-size" href="/tag/{{ tag.slug }}">{{ tag.name }}</a>
-			</li>
-		{%- endfor -%}
-	</ul>
-{% endif %}
+{% include "components/entry-terms.njk" %}

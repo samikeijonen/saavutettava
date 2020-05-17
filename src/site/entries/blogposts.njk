@@ -28,7 +28,11 @@ permalink: "{{ blogpost.date | dateForSlug }}/{{ blogpost.slug }}/index.html"
 {% endblock %}
 
 {% block contentFooter %}
-	<div class="entry__footer">
+	<div class="entry__footer flow-spacing">
+		<p class="font-sans font-bold has-md-font-size mb-0">Kategoriat:</p>
+		{% include "components/categories.njk" %}
+
+		<p class="font-sans font-bold has-md-font-size mb-0">Avainsanat:</p>
 		{% include "components/tags.njk" %}
 	</div>
 {% endblock %}

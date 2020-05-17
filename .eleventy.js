@@ -59,10 +59,17 @@ module.exports = function(eleventyConfig) {
 		});
 	});
 
-	// Get posts by tag ID.
+	// Get posts by tag IDs.
 	eleventyConfig.addFilter('postsByTagId', (array, ID) => {
 		return array.filter( item => {
 			return item.tags.includes(ID);
+		});
+	});
+
+	// Get posts by category IDs.
+	eleventyConfig.addFilter('postsByCategoryId', (array, ID) => {
+		return array.filter( item => {
+			return item.categories.includes(ID);
 		});
 	});
 
@@ -70,6 +77,13 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addFilter('thisPostTags', (allTags, postTags) => {
 		return allTags.filter( item => {
 			return postTags.includes(item.id);
+		});
+	});
+
+	// Get post categories by array of category IDs in that post.
+	eleventyConfig.addFilter('thisPostCategories', (allCategories, postCategories) => {
+		return allCategories.filter( item => {
+			return postCategories.includes(item.id);
 		});
 	});
 
