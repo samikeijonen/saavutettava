@@ -21,8 +21,10 @@
 		grid-gap: calc(var(--spacing-2x) * 4);
 		grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
 
-		&--blog {
-			grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+		@media (--screen-md) {
+			&--blog {
+				grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+			}
 		}
 	}
 
