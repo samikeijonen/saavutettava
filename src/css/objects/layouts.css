@@ -14,19 +14,16 @@
 	align-items: center;
 }
 
-@media (--screen-sm) {
+@supports (grid-area: auto) {
 
-	@supports (grid-area: auto) {
+	.grid {
+		display: grid;
+		grid-gap: calc(var(--spacing-2x) * 4);
+		grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
 
-		.grid {
-			display: grid;
-			grid-gap: calc(var(--spacing-2x) * 4);
-			grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
-
-			&--blog {
-				grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
-			}
+		&--blog {
+			grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
 		}
-
 	}
+
 }
