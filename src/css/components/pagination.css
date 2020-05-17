@@ -7,18 +7,27 @@
 	flex-wrap: wrap;
 }
 
-.pagination__item:not(:last-child) {
-	&::after {
-		content: "\002F";
-		padding: 0 var(--spacing-2x);
+.pagination__anchor {
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	margin-right: var(--spacing);
+	margin-top: var(--spacing);
+	padding: var(--spacing) var(--spacing-2x);
+	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active,
+	&[aria-current] {
+		background-color: var(--color-grey-900);
+		color: var(--color-white);
+	}
+
+	&:focus {
+		outline-offset: -2px;
 	}
 }
 
-.pagination__anchor {
-	text-decoration: none;
-}
-
 .pagination__anchor[aria-current] {
-	color: var(--color-grey-700);
 	text-decoration: underline;
 }

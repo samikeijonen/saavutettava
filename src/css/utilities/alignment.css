@@ -26,11 +26,11 @@
 }
 
 .alignwide {
-	max-width: var(--max-w-lg);
+	max-width: var(--max-w-xl);
 }
 
 .alignfull {
 	margin-left: calc(var(--spacing-2x) * -1);
 	margin-right: calc(var(--spacing-2x) * -1);
-	max-width: calc(100% + var(--spacing-4x));
+	max-width: none;
 }

@@ -44,6 +44,18 @@
 	}
 }
 
+.entry-archive__anchor {
+	color: var(--color-grey-800);
+	text-decoration: none;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: var(--color-primary);
+		text-decoration: underline;
+	}
+}
+
 .entry__terms-item {
 	margin-right: var(--spacing-2x);
 	margin-top: var(--spacing-2x);

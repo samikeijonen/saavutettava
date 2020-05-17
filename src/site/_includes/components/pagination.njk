@@ -1,0 +1,11 @@
+{% if pagination.pages.length > 1 %}
+	<nav class="pagination mt-8" aria-label="Uudemmat ja vanhemmat artikkelit">
+		<ol class="pagination__items reset-list">
+			{%- for pageEntry in pagination.pages %}
+				<li class="pagination__item">
+					<a class="pagination__anchor font-sans font-bold has-md-font-size" href="{{ pagination.hrefs[ loop.index - 1 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}><span class="screen-reader-text">Page</span> {{ loop.index }}</a>
+				</li>
+			{%- endfor %}
+		</ol>
+	</nav>
+{% endif %}
