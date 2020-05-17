@@ -59,24 +59,18 @@ module.exports = function(eleventyConfig) {
 		});
 	});
 
+	// Get posts by tag ID.
+	eleventyConfig.addFilter('postsByTagId', (array, ID) => {
+		return array.filter( item => {
+			return item.tags.includes(ID);
+		});
+	});
+
 	// Get post tags by array of tag IDs in that post.
 	eleventyConfig.addFilter('thisPostTags', (allTags, postTags) => {
 		return allTags.filter( item => {
 			return postTags.includes(item.id);
 		});
-	});
-
-	// Get tag name by tag ID.
-	eleventyConfig.addFilter('tagName', (ID, array) => {
-		const tags = array;
-
-		// Filter based on matching ID.
-		const tag = tags.filter( item => {
-			return item.id === ID;
-		});
-
-		// Tag is still object. Let's get the first one, and tag name from it.
-		return tag[0].name;
 	});
 
 	// A debug utility.
