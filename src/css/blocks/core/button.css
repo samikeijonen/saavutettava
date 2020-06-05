@@ -33,23 +33,24 @@
 }
 
 .wp-block-button__link {
-	background-color: var(--color-primary);
+	background-color: var(--color-primary-400);
 	border: 2px solid transparent;
 	border-radius: 0;
-	color: var(--color-white);
+	color: var(--color-grey-900);
 	display: inline-block;
-	font-weight: 500;
-	padding: calc(var(--spacing) * 1.5) calc(var(--spacing-2x) * 1.25);
+	font-family: var(--font-family-sans);
+	font-weight: 700;
+	padding: calc(var(--spacing) * 1.5) calc(var(--spacing-2x) * 1.5);
 	text-decoration: none;
 
 	&:visited {
-		color: var(--color-white);
+		color: var(--color-grey-900);
 	}
 
 	&:hover,
 	&:focus,
 	&:active {
-		background-color: var(--color-primary-900);
+		background-color: var(--color-grey-900);
 		color: var(--color-white);
 		outline-offset: -2px;
 	}
@@ -82,6 +83,7 @@
 
 .is-style-underlined .wp-block-button__link { /* stylelint-disable-line no-descending-specificity */
 	background-color: transparent;
+	border-bottom: 2px solid;
 	border-radius: 0;
 	color: var(--color-primary);
 	padding: 0;

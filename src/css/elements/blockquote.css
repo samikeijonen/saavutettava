@@ -4,19 +4,21 @@ cite {
 
 blockquote {
 	border-left: 0.25rem solid;
-	font-style: italic;
 	margin: 0 0 var(--spacing-4x);
 	padding-left: var(--spacing-3x);
 
-	p {
+	& p {
 		font-size: var(--font-size-xl);
+		font-style: italic;
 	}
 
-	p:last-of-type {
+	& p:last-of-type {
 		margin-bottom: 0;
 	}
 
-	cite {
+	& cite {
 		display: block;
+		font-size: var(--font-size-md);
+		margin-top: var(--spacing-4x);
 	}
 }

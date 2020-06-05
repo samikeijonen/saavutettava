@@ -1,4 +1,3 @@
 .site-header__wrapper {
-	border-bottom: 1px solid var(--color-grey-250);
-	padding-bottom: var(--spacing-2x);
+	border-bottom: 1px solid var(--color-grey-800);
 }

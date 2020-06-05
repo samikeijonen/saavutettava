@@ -10,7 +10,6 @@
 
 .nav__item {
 	margin-right: var(--spacing-2x);
-	margin-top: var(--spacing);
 }
 
 .nav__item:last-child {
@@ -30,11 +29,11 @@
 	text-transform: uppercase;
 
 	&::after {
-		background-color: var(--color-white);
-		bottom: -2px;
+		background-color: var(--color-primary);
+		bottom: 0;
 		content: "";
 		display: block;
-		height: 2px;
+		height: 4px;
 		position: absolute;
 		transition: width var(--transition-duration-md);
 		width: 0;
@@ -56,4 +55,11 @@
 	color: var(--color-grey-700);
 	letter-spacing: 0;
 	text-transform: none;
+
+	&:hover,
+	&:active,
+	&:focus,
+	&[aria-current="page"] {
+		color: var(--color-grey-900);
+	}
 }

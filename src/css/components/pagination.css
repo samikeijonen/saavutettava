@@ -5,11 +5,12 @@
 .pagination__items {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .pagination__anchor {
-	background-color: var(--color-primary);
-	color: var(--color-white);
+	background-color: var(--color-grey-200);
+	color: var(--color-grey-900);
 	margin-right: var(--spacing);
 	margin-top: var(--spacing);
 	padding: var(--spacing) var(--spacing-2x);

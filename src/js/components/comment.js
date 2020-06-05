@@ -82,7 +82,7 @@ const postComment = () => {
 			.then((response) => {
 				if (response.ok === true) {
 					handleMessage(
-						'Thanks for commenting! Your comment is under moderation.',
+						'Kiitos kommentista! Kommenttisi odottaa moderointia.',
 						'is-style-success',
 					);
 
@@ -102,7 +102,7 @@ const postComment = () => {
 				spinner.classList.add('is-hidden');
 			})
 			.catch((error) => {
-				handleMessage('Something went wrong! Can you try again.', 'is-style-error');
+				handleMessage('Jokin meni pieleen. Voitko yrittää uudelleen.', 'is-style-error');
 				console.error( 'Error:', error ); /* eslint-disable-line */
 			});
 	}

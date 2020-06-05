@@ -22,7 +22,6 @@
 	--font-size-nav: var(--font-size-sm);
 
 	@media (--screen-md) {
-		--font-size-lg: 1.25rem;
 		--font-size-xl: 1.5rem;
 		--font-size-2xl: 2rem;
 		--font-size-3xl: 2.5rem;

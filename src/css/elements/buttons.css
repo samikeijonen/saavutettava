@@ -2,20 +2,22 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	background-color: var(--color-primary);
+	background-color: var(--color-primary-400);
 	border: 2px solid transparent;
 	border-radius: 0;
-	color: var(--color-white);
+	color: var(--color-grey-900);
 	display: inline-block;
-	font-weight: 500;
-	padding: calc(var(--spacing) * 1.5) calc(var(--spacing-2x) * 1.25);
+	font-family: var(--font-family-sans);
+	font-size: var(--font-size-lg);
+	font-weight: 700;
+	padding: calc(var(--spacing) * 1.5) calc(var(--spacing-2x) * 1.5);
 	text-decoration: none;
 	transition: all var(--transition-duration-md) ease-in-out;
 
 	&:hover,
 	&:active,
 	&:focus {
-		background-color: var(--color-primary-900);
+		background-color: var(--color-grey-900);
 		color: var(--color-white);
 		outline-offset: -2px;
 	}
